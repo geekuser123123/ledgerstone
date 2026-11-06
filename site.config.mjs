@@ -14,7 +14,7 @@
 export default {
   site: {
     url: 'https://ledgerstone-sd.netlify.app', // no trailing slash
-    googleSiteVerification: null, // Search Console HTML-tag "content" value
+    googleSiteVerification: 'f6_PXqXVo3AZkwZ-7l0NT9NbmQ4PvuK2VVwuJ-fE414', // Search Console HTML-tag "content" value
     locale: 'en_US',
     language: 'en-US',
   },
