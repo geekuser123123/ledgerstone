@@ -18,7 +18,7 @@ function header(path) {
   return `<a class="skip" href="#main">Skip to main content</a>
 <div class="topbar">
   <div class="container topbar__inner">
-    <p>${icon('pin')}<span>Serving ${esc(B.serviceArea.join(' · '))}</span></p>
+    <p>${icon('pin')}<span><span class="topbar__extra">${esc(B.address.streetAddress)}, </span>${esc(B.address.addressLocality)}, ${esc(B.address.addressRegion)}<span class="topbar__extra"> · Serving Washington, DC</span></span></p>
     <p class="topbar__right">${B.phone ? `<a href="${phoneHref()}">${icon('phone')}<span>${esc(B.phone)}</span></a>` : ''}<span class="topbar__sep" aria-hidden="true"></span><span>${hoursShort()}</span></p>
   </div>
 </div>

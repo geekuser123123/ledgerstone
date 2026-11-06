@@ -31,16 +31,21 @@ export default {
     phoneE164: '+17712239532',
     email: null, // optional — hidden until set; visitors use the contact form
 
-    /** Service-area business: meets clients at their location. Address hidden. */
-    locationType: 'service-area',
-    address: { streetAddress: null, addressLocality: 'Washington', addressRegion: 'DC', postalCode: null, addressCountry: 'US' },
+    /**
+     * "office": a staffed office that receives clients during the posted hours
+     * (Google Business Profile storefront). Address, map and storefront schema
+     * are shown. The office is in Fairmount Heights, MD, just across Eastern Ave
+     * from DC — keep the locality exactly as Google lists it.
+     */
+    locationType: 'office',
+    address: { streetAddress: '525 Eastern Ave NE', addressLocality: 'Fairmount Heights', addressRegion: 'MD', postalCode: '20743', addressCountry: 'US' },
     geo: null,
     serviceArea: ['Washington, DC'],
 
     hours: [
       { days: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'], opens: '09:00', closes: '17:00' },
     ],
-    hoursNote: 'Meetings at your home or office in Washington, DC, by appointment.',
+    hoursNote: 'Office meetings by appointment.',
     timeZoneLabel: 'Eastern Time',
 
     sameAs: [],

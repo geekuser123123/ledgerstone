@@ -8,19 +8,22 @@ Use this **after** the website is live and Search Console is verified.
 > office, mailbox or unstaffed coworking address. Google may suspend the profile, and
 > it can damage trust.
 
-## Ledgerstone (Washington, DC) notes
+## Ledgerstone notes
 
-- **Name:** **Ledgerstone**, exactly as on the website. Register it as a **trade name** through
-  DC CorpOnline (Department of Licensing and Consumer Protection) before creating the profile.
-- **Business type:** **Service business**: you visit clients at their home or office in
-  Washington, DC. The website shows no address. Google will still ask for your real address
-  for verification and will keep it hidden. Don't use a virtual office or mailbox.
-- **Service area:** Washington, DC.
+- **Name:** **Ledgerstone**, exactly as on the website. The office is in **Maryland**, so register
+  the trade name with the Maryland State Department of Assessments and Taxation (SDAT, via
+  Maryland Business Express) before creating the profile. Ask your attorney or accountant whether
+  you also need a DC registration for work done in DC.
+- **Business type:** **Local store / storefront**: clients visit the office during the posted hours.
+- **Address:** **525 Eastern Ave NE, Fairmount Heights, MD 20743**, entered in GBP exactly as on the
+  website. Add any suite or unit number to both. Google shows the location as Fairmount Heights,
+  not Washington, DC; that's correct, and the site matches it. The office must be staffed during
+  the posted hours, and virtual offices or mailboxes can get the profile suspended.
+- **Service area (optional):** you may add Washington, DC as a service area as well.
 - **Phone:** **(771) 223-9532**.
 - **Hours:** Monday–Friday, 9:00 AM – 5:00 PM.
 - **Primary category:** **Financial consultant**.
-- **Secondary category:** **Business administration service**, backed by the website's plan
-  setup, records, Form 5500-EZ and ongoing support services.
+- **Secondary category:** **Business administration service**.
 
 ## Step 1: Verify the website
 - [ ] Search Console Domain property verified (see `SEARCH-CONSOLE-SETUP.md`)

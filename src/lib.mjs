@@ -60,7 +60,7 @@ export const SERVICES = [
   { key: 'solo401k', id: 'solo-401k-education', title: 'Solo 401(k) Education', icon: 'person', group: 'education',
     short: 'Eligibility, contributions in both roles, Roth options and filing rules.' },
   { key: 'consultation', id: 'meetings', title: 'Planning Meetings', icon: 'chat', group: 'education',
-    short: 'A sit-down at your home or office in Washington, DC.' },
+    short: 'A sit-down at our office on Eastern Ave, at the DC line.' },
 ].filter((s) => config.services[s.key]?.offered);
 
 // ------------------------------------------------------------------ icons
@@ -138,7 +138,7 @@ export function organizationSchema() {
     url: SITE + '/',
     logo: `${SITE}/assets/img/logo.png`,
     image: OG_IMAGE(),
-    description: 'Solo and self-directed 401(k) plan support in Washington, DC — plan setup, records and valuations, Form 5500-EZ preparation, ongoing support and plain-English education, delivered at the client’s location.',
+    description: 'Solo and self-directed 401(k) plan support for Washington, DC — plan setup, records and valuations, Form 5500-EZ preparation, ongoing support and plain-English education, from an office in Fairmount Heights, Maryland.',
     areaServed: B.serviceArea.map((n) => ({ '@type': 'City', name: n })),
     knowsAbout: ['Self-Directed 401(k)', 'Solo 401(k)', 'Form 5500-EZ', 'Retirement plan administration', 'Prohibited transaction rules'],
   };

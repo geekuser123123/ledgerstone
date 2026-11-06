@@ -1,4 +1,4 @@
-import { icon, SERVICES, faqList, faqSchema, ctaBand, B, esc, mediaImg, heroVideo, phoneHref, SITE, ORG_ID } from '../lib.mjs';
+import { icon, SERVICES, faqList, faqSchema, ctaBand, B, esc, mediaImg, heroVideo, phoneHref, SITE, ORG_ID, addressHtml } from '../lib.mjs';
 import { contactBlock } from './contact.mjs';
 
 const ADMIN = SERVICES.filter((s) => s.group === 'admin');
@@ -6,7 +6,7 @@ const EDU = SERVICES.filter((s) => s.group === 'education');
 
 const faqs = [
   { q: 'What does Ledgerstone do?', a: '<p>We provide administrative support and education for Solo and self-directed 401(k) plans: setup alongside your chosen provider, plan records and year-end values, Form 5500-EZ preparation, and ongoing help. You stay the plan sponsor and decision-maker.</p>' },
-  { q: 'Do you meet in person?', a: `<p>Yes. We meet at your home or office in ${esc(B.serviceArea.join(' and '))}, by appointment, Monday through Friday. A first conversation can be by phone.</p>` },
+  { q: 'Where is your office?', a: `<p>At ${esc(B.address.streetAddress)}, ${esc(B.address.addressLocality)}, ${esc(B.address.addressRegion)} ${esc(B.address.postalCode)} — on Eastern Ave, right at the Washington, DC line. Meetings are by appointment, Monday through Friday. A first conversation can be by phone.</p>` },
   { q: 'Do you choose or recommend investments?', a: '<p>No. Investment decisions are yours. We keep the plan’s records in order and explain the rules that apply.</p>' },
   { q: 'Do you hold or move plan money?', a: '<p>Never. Plan assets stay in accounts titled to your plan with the institutions you choose.</p>' },
   { q: 'Who can have a Solo 401(k)?', a: '<p>Generally, a business with self-employment or business income and no eligible employees other than the owners and their spouses — sole proprietors, LLCs, partnerships and corporations can all qualify. Hiring can change that.</p>' },
@@ -48,7 +48,7 @@ export default {
     <div class="hero__copy">
       <p class="kicker kicker--light">Washington, DC · ${esc(B.tagline)}</p>
       <h1 id="hero-h">Your 401(k), kept in <em>good order.</em></h1>
-      <p class="hero__lead">Ledgerstone helps business owners and self-employed professionals in Washington, DC set up and maintain Solo and self-directed 401(k) plans — accurate records, filings on time, and clear answers. We meet you at your home or office.</p>
+      <p class="hero__lead">Ledgerstone helps business owners and self-employed professionals in Washington, DC set up and maintain Solo and self-directed 401(k) plans — accurate records, filings on time, and clear answers. Visit our office on Eastern Ave, right at the DC line.</p>
       <div class="btn-row">
         <a class="btn btn--accent btn--lg" href="#contact">Request a Meeting</a>
         <a class="btn btn--glass btn--lg" href="${phoneHref()}">${icon('phone')} ${esc(B.phone)}</a>
@@ -161,7 +161,8 @@ export default {
       <p class="kicker">About Ledgerstone</p>
       <h2 id="about-h">Named for the record that holds everything together</h2>
       <p class="lead">A ledger is where every entry is kept; stone is what lasts. Ledgerstone exists to keep owner-run retirement plans accurately recorded and dependably maintained.</p>
-      <p>We serve consultants, contractors, attorneys, clinicians, independent professionals and small firms across Washington, DC — meeting at their homes and offices, by appointment.</p>
+      <p>We serve consultants, contractors, attorneys, clinicians, independent professionals and small firms across Washington, DC, with meetings at our office just across the line in Fairmount Heights, Maryland, by appointment.</p>
+      <p class="contact-line">${icon('pin')} <span>${addressHtml().replace('<br>', ', ')}</span></p>
       <ul class="standards">
         <li><strong>Defined scope.</strong> We agree up front what we handle and what stays with you and your provider.</li>
         <li><strong>Your decisions stay yours.</strong> We aren’t a fiduciary, trustee, custodian, registered investment adviser or broker-dealer, and we don’t give legal or tax advice.</li>
@@ -171,11 +172,11 @@ export default {
   </div>
 </section>
 
-${ctaBand({ heading: 'Let’s put your plan’s records in order.', text: 'Request a meeting at your home or office in Washington, DC — new plan or existing one.', button: 'Request a Meeting' })}
+${ctaBand({ heading: 'Let’s put your plan’s records in order.', text: 'Request a meeting at our office on Eastern Ave — new plan or existing one.', button: 'Request a Meeting' })}
 
 <section class="section" id="contact" aria-labelledby="contact-h">
   <div class="container">
-    <div class="head"><p class="kicker">Contact</p><h2 id="contact-h">Request a meeting</h2><p>Share a few details and we’ll call to set a time at your home or office.</p></div>
+    <div class="head"><p class="kicker">Contact</p><h2 id="contact-h">Request a meeting</h2><p>Share a few details and we’ll call to set a time at our office.</p></div>
   </div>
   ${contactBlock()}
 </section>

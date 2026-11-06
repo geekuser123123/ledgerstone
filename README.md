@@ -1,7 +1,7 @@
 # Ledgerstone: Website
 
 A one-page site for Ledgerstone, which provides Solo and self-directed 401(k) plan support in
-Washington, DC, delivered at the client's location. It's static with no dependencies, built
+Washington, DC, from an office at 525 Eastern Ave NE, Fairmount Heights, MD (at the DC line). It's static with no dependencies, built
 with Node and deployed to **Netlify** at `https://ledgerstone.netlify.app`.
 
 ## Quick start
@@ -22,7 +22,7 @@ STRICT=1 node build.mjs # pre-launch check
 
 The homepage (`/`) holds every section, each reachable from the menu and the sticky section bar:
 Services · How it works · Who does what · 401(k) basics · FAQ · About · Contact (meeting form).
-`/privacy-policy/`, `/terms/` and `/disclosures/` are separate pages under DC law, plus
+`/privacy-policy/`, `/terms/` and `/disclosures/` are separate pages (Terms governed by Maryland law), plus
 `/thank-you/` and `404.html`.
 
 ## Design

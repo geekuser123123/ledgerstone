@@ -739,3 +739,5 @@ h3 { font-family: var(--serif); font-weight: 700; }
 .hero__poster--still { transform-origin: 60% 50%; animation: slowzoom 28s ease-in-out infinite alternate; }
 @keyframes slowzoom { from { transform: scale(1); } to { transform: scale(1.09); } }
 @media (prefers-reduced-motion: reduce) { .hero__poster--still { animation: none; } }
+.topbar a { white-space: nowrap; }
+@media (max-width: 760px) { .topbar__extra { display: none; } }
