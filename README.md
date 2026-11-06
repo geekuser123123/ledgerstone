@@ -2,7 +2,7 @@
 
 A one-page site for Ledgerstone, which provides Solo and self-directed 401(k) plan support in
 Washington, DC, from an office at 525 Eastern Ave NE, Fairmount Heights, MD (at the DC line). It's static with no dependencies, built
-with Node and deployed to **Netlify** at `https://ledgerstone.netlify.app`.
+with Node and deployed to **Netlify** at `https://ledgerstone-sd.netlify.app`.
 
 ## Quick start
 

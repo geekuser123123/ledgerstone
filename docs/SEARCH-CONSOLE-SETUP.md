@@ -3,7 +3,7 @@
 > Search Console verification is **not** done until the site owner completes these
 > steps and Google confirms it. Nothing in this repository verifies it automatically.
 
-**Current address:** `https://ledgerstone.netlify.app`
+**Current address:** `https://ledgerstone-sd.netlify.app`
 (set in `site.config.mjs → site.url`)
 
 ## What the website already provides
@@ -19,7 +19,7 @@
 
 ---
 
-## Option A: Now, on `ledgerstone.netlify.app` (URL-prefix property)
+## Option A: Now, on `ledgerstone-sd.netlify.app` (URL-prefix property)
 
 A **Domain property** needs a DNS TXT record. You don't control DNS for `netlify.app`,
 so use a **URL-prefix property** with the **HTML tag** method.
@@ -28,7 +28,7 @@ so use a **URL-prefix property** with the **HTML tag** method.
 2. Open <https://search.google.com/search-console> and sign in with the Google account
    that will **also manage the Google Business Profile**.
 3. Click **Add property** → **URL prefix** and enter
-   `https://ledgerstone.netlify.app/`
+   `https://ledgerstone-sd.netlify.app/`
 4. Choose **HTML tag** as the verification method. Google shows a tag like:
    `<meta name="google-site-verification" content="AbCdEf123..." />`
 5. Copy **only the content value** (`AbCdEf123...`) into `site.config.mjs`:

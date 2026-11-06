@@ -5,7 +5,7 @@ Run `node build.mjs` to see what's still missing. Nothing on the site has been i
 ## Already set
 
 - [x] Name: **Ledgerstone**
-- [x] Site URL: `https://ledgerstone.netlify.app`
+- [x] Site URL: `https://ledgerstone-sd.netlify.app`
 - [x] Phone: **(771) 223-9532**
 - [x] Hours: **Monday–Friday, 9:00 AM – 5:00 PM (Eastern Time)**
 - [x] Office: **525 Eastern Ave NE, Fairmount Heights, MD 20743** (storefront at the DC line; office meetings by appointment), serving Washington, DC
